@@ -1,0 +1,6 @@
+//File for providing inputs to the project
+----------------------------------------------------
+2feflo.domn.cylinder.medium //File which provides the details of the grid, initial conditions, boundary conditions
+----Parameters for SGS method-----------------------
+30000 //Maximum Number of iterations
+0.0001 //Tolerance

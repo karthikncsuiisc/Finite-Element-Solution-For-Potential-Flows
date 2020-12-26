@@ -1,0 +1,25 @@
+all: project
+
+project: main.o read_input.o reading_grid.o results.o system_matrices.o SGS.o
+	 g++ main.o read_input.o reading_grid.o results.o system_matrices.o SGS.o -o project
+
+main.o: main.cpp
+	g++ -c main.cpp
+
+read_input.o: read_input.cpp
+	g++ -c read_input.cpp
+
+factorial.o: reading_grid.cpp
+	g++ -c reading_grid.cpp
+
+results.o: results.cpp
+	g++ -c results.cpp
+	
+system_matrices.o: system_matrices.cpp
+	g++ -c system_matrices.cpp
+
+SGS.o: SGS.cpp
+	g++ -c SGS.cpp
+
+clean:
+	rm *o project

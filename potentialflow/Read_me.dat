@@ -1,0 +1,11 @@
+The program is aranged into subroutinies a header file, make file. 
+The subroutines in this program are:
+
+main()
+read_input()        :It reads input from the file input_file.dat. User can change the parameters in the input_file
+reading_grid()      :It searches for the grid file name given in the input_file.dat file and reads it.
+System_matrices()   :The subroutine assbebles the system matrices for poissoons equation with linear ellements
+SGS()               :Subroutine which solves the matrix system assemblled in sysytem_matrices() using symmetric gauss-sidel           integration method.
+
+results()	    :It outputs the results in vtk format.
+ 
